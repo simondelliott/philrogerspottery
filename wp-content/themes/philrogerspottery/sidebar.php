@@ -1,3 +1,7 @@
+	<ul>
+	<?php wp_list_pages('title_li='); ?>
+	</ul>
+	
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Body Right Sidebar') ) : ?>
             <h3>Recent Pieces</h3>
             <ul>
@@ -27,6 +31,7 @@
             <h3>Community</h3>
               <ul>
 			<?php wp_loginout(); ?> 
+			
 <?php wp_register(); ?>		  
               </ul>
 <?php endif; ?>

@@ -1,5 +1,13 @@
+					<div class="col3">
+						<a href="/"><img id="logo" src="<?php bloginfo('template_directory'); ?>/logo.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
        <div id="footer">
-			footer
+			<div id="footer_text">
+				created by <a href="http://simondelliott.com">simondelliott</a>	
+			</div>
       </div>
       
   <?php wp_footer(); ?>

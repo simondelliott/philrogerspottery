@@ -9,14 +9,15 @@ Tags: white, fixed width, three columns, valid CSS, widget ready, simple, widget
 
 @import "wordpress_defaults.css";
 
+/*
 #logo{
-	background-image: url(logo_full.gif);
 	background-position: left;
 	background-repeat: none;
-	height: 460px;
-	width: 132px;
 }
-
+img {
+	margin:10px 0 5px;
+}
+*/
 body {
 	margin:0;
 	padding:0;
@@ -30,13 +31,15 @@ body {
     font: 83%/1.4 arial, helvetica, sans-serif;
 }
 a {
-	color:#369;
+	color: 		#314152;
+	font-weight: bold;
+	font-size: 1em;
 }
 a:hover {
-	color:#fff;
-	background:#369;
+	color: 	#db1a22;		
 	text-decoration:none;
 }
+
 h1, h2, h3 {
 	margin:.8em 0 .2em 0;
 	padding:0;
@@ -44,9 +47,6 @@ h1, h2, h3 {
 p {
 	margin:.4em 0 .8em 0;
 	padding:0;
-}
-img {
-	margin:10px 0 5px;
 }
 #ads img {
 	display:block;
@@ -58,15 +58,15 @@ img {
 	clear:both;
 	float:left;
 	width:100%;
-}
-#header {
-	border-bottom:1px solid #000;
+	height: 80px;
 }
 #header p,
 #header h1,
 #header h2 {
-	padding:.4em 15px 0 15px;
-	margin:0;
+	padding: 	1.9em 15px 0 20px;
+	margin:		0;
+	color: 		#314152;
+	font-size:	170%;
 }
 #header ul {
 	clear:left;
@@ -88,7 +88,7 @@ img {
 	margin:0 0 0 1px;
 	padding:3px 10px;
 	text-align:center;
-	background:#eee;
+	/*background:#eee;*/
 	color:#000;
 	text-decoration:none;
 	position:relative;
@@ -111,8 +111,8 @@ img {
 /* 'widths' sub menu */
 #layoutdims {
 	clear:both;
-	background:#eee;
-	border-top:4px solid #000;
+	/*background:#eee;*/
+	/*border-top:4px solid #000;*/
 	margin:0;
 	padding:6px 15px !important;
 	text-align:right;
@@ -144,7 +144,7 @@ img {
 }
 /* 3 Column settings */
 .threecol {
-	background:#eee;		/* right column background colour */
+	/*background:#eee;*/		/* right column background colour */
 }
 .threecol .colmid {
 	right:25%;			/* width of the right column */
@@ -152,7 +152,7 @@ img {
 }
 .threecol .colleft {
 	right:50%;			/* width of the middle column */
-	background:#f4f4f4;	/* left column background colour */
+	/*background:#f4f4f4;*/	/* left column background colour */
 }
 .threecol .col1 {
 	width:46%;			/* width of center column content (column width minus padding on either side) */
@@ -172,9 +172,72 @@ img {
 	clear:both;
 	float:left;
 	width:100%;
-	border-top:1px solid #000;
 }
+#footer_text{
+	color: #d0d0d0;
+	margin-top: 20px;
+	text-align: left;
+	padding-right: 50px;
+	padding-left: 50px;
+	height: 20px;
+	padding-top: 30px; 
+}
+#footer a{
+	color: #d0d0d0;
+	font-weight: normal;
+}
+
 #footer p {
 	padding:10px;
 	margin:0;
+	vertical-align: text-bottom;
 }
+
+.col2 ul{
+	margin-left: 0px;
+	padding-left: 0px;
+	width:100%;
+}
+
+.col2 li{
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style: none;
+	width: 100%;
+	height: 33px;
+	font-size: 1.3em;
+}
+.col2 li a{
+	text-decoration: none;
+	width: 100%;
+	display: block;
+}
+.home_page{
+	margin-bottom: 30px;	
+}
+
+.gallery_content{
+	margin-top: 60px;
+	color: #c0c0c0;
+}
+
+#gallery_nav ul{
+	list-style-position: outside;
+	list-style-type: none;	
+	list-style-image: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#gallery_nav ul li{
+	float:left;
+	background-repeat: no-repeat;
+	margin-right: 15px;
+}
+
+#gallery_nav a {
+	color: #909090;
+}
+#gallery_nav a:hover {
+	color: 	#fb4a52;		
+}
+
