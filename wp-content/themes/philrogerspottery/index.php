@@ -1,6 +1,7 @@
 <?php
 	get_header();
 ?>
+
 		<div id="header">
 			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 		    <h2><?php bloginfo('description'); ?></h2>		
@@ -12,18 +13,16 @@
     <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
       <div class="item">
-                <div class="side left">
-                  <span class="date"><?php the_time('j M Y, g:ia') ?></span><br/>
-                  <span class="labels"><?php the_category(' ') ?><?php the_tags(': ', ' '); ?></span><br/>
-                  by <?php the_author() ?><br/>
+                <h2><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> <span class="date"><?php the_time('M Y') ?></span></h2>
+				<span class="item_strap"><?php the_category(' ') ?> <?php the_tags(': ', ' '); ?> </span>
+				<span class="item_content">
+                <?php the_content('more &raquo;'); ?>
+				</span>
+                <div class="item_footer">
                   <?php comments_popup_link('leave a comment', '1 comment', '% comments'); ?>
                   <?php edit_post_link('edit', '', ''); ?><br/>
                   <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Post Left Sidebar') ) : ?>
                   <?php endif; ?>
-                </div>
-                <div class="main">
-                  <h2><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                  <?php the_content('more &raquo;'); ?>
                 </div>
               </div>
       <?php endwhile; ?>

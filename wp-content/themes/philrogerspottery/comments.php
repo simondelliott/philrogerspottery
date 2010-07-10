@@ -19,13 +19,13 @@
               <div class="item" id="comments"></div>
               <?php foreach ($comments as $comment) : ?>
                 <div class="item" id="comment-<?php comment_ID() ?>">
-                  <div class="side left">
-                    <span class="date"><?php comment_date('j M Y, g:ia') ?></span><br/>
-                    by <?php comment_author_link() ?><br/>
+                  <div class="comment_author">
                     <?php echo get_avatar( $comment, $size = '48', $default = 'identicon' ); ?><br/>
+                    <span><?php comment_date('j M Y') ?></span><br/>
+                    by <?php comment_author_link() ?><br/>
                     <?php edit_comment_link('edit', '', ''); ?><br/>
                   </div>
-                  <div class="main">
+                  <div class="comment_body">
                     <div class="comment">
                       <?php comment_text() ?>
                     </div>

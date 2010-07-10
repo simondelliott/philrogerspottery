@@ -1,5 +1,5 @@
 					<div class="col3">
-						<a href="/"><img id="logo" src="<?php bloginfo('template_directory'); ?>/logo.png"/></a>
+						
 					</div>
 				</div>
 			</div>
