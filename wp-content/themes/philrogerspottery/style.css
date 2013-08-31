@@ -29,11 +29,14 @@ body {
 	font-size:90%;
     color: #333333;
     font: 83%/1.4 arial, helvetica, sans-serif;
+}
+.main_body_style{
     background-image: url(logo.png);
     background-position: top right;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;	
 }
+
 a {
 	color: 		#314152;
 	font-weight: bold;
@@ -239,7 +242,7 @@ p {
 #gallery_nav ul li{
 	float:left;
 	background-repeat: no-repeat;
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 #gallery_nav a {

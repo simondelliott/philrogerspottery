@@ -1,0 +1,5 @@
+nbproject/
+*.log
+config.php
+framework.local
+wp-content/uploads

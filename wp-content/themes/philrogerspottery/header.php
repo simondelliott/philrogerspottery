@@ -18,5 +18,5 @@
 	    <?php wp_get_archives('type=monthly&format=link'); ?>
 	    <?php wp_head(); ?>
 	</head>
- 	<body>
+ 	<body class="main_body_style">
 		

@@ -1,0 +1,20 @@
+<VirtualHost framework.local >
+        #Basic setup
+        ServerName philrogerspottery.local
+        DocumentRoot /Users/simondelliott/work/philrogerspotter/src
+        CustomLog /Users/simondelliott/work/philrogerspottery/src/philrogerspottery.log combined
+
+        <Directory /Users/simondelliott/work/philrogerspottery/src >
+               Options -Indexes FollowSymLinks
+               AllowOverride AuthConfig FileInfo
+               Order allow,deny
+               Allow from all
+                # Order Deny,Allow
+                # Allow from all
+                # Don't show indexes for directories
+                # Options +Indexes
+        </Directory>
+</VirtualHost>
+
+
+
