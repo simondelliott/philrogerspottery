@@ -1,7 +1,8 @@
-<VirtualHost framework.local >
+<VirtualHost *:80 >
         #Basic setup
         ServerName philrogerspottery.local
-        DocumentRoot /Users/simondelliott/work/philrogerspotter/src
+	ServerAlias philrogerspottery.local
+        DocumentRoot /Users/simondelliott/work/philrogerspottery/src/
         CustomLog /Users/simondelliott/work/philrogerspottery/src/philrogerspottery.log combined
 
         <Directory /Users/simondelliott/work/philrogerspottery/src >
